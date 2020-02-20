@@ -1,17 +1,17 @@
 <?php
-    $Id=$_GET['Id'];
+    // $Id=$_GET['Id'];
     $Nombre=$_GET['Nombre'];
+    $Obsc=$_GET['Obsc'];
     $FechaNacimiento=$_GET['FechaNacimiento'];
-    $GrupoSanguineo=$_GET['GrupoSanguineo'];
-    $Donador=$_GET['Donador'];
-    $NumEmergencia=$_GET['NumEmergencia'];
     $Foto=$_GET['Foto'];
-    $Antiwuedad=$_GET['Antiwuedad'];
     $Firma=$_GET['Firma'];
     $Restriccion=$_GET['Restriccion'];
-    $Obsc=$_GET['Obsc'];
+    $Antiwuedad=$_GET['Antiuedad'];
+    $GrupoSanguineo=$_GET['GrupoSanguineo'];
+    $NumEmergencia=$_GET['NumEmergencia'];
+    $Donador=$_GET['Donador'];
 
-    print("Id: ".$Id."<br>");
+    // print("Id: ".$Id."<br>");
     print("Nombre: ".$Nombre."<br>");
     print("FechaNacimiento: ".$FechaNacimiento."<br>");
     print("GrupoSanguineo: ".$GrupoSanguineo."<br>");
@@ -22,4 +22,14 @@
     print("Firma: ".$Firma."<br>");
     print("Restriccion: ".$Restriccion."<br>");
     print("Obsc: ".$Obsc."<br>");
+
+    // Indicar donde acudir por la funciones
+    include("Conexion.php");
+    $conexion = Conectar();
+    $SQL = "INSERT INTO conductores VALUES('',
+        '$Nombre','$Obsc','$FechaNacimiento','$Foto','$Firma','$Restriccion'
+        '$Antiwuedad','$NumEmergencia','$GrupoSanguineo','$Donador');";
+    $resultado = Consultar($conexion, $SQL);
+    print("Resultado: ".$resultado);
+    Cerrar($conexion);
 ?>

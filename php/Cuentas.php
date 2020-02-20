@@ -10,4 +10,3 @@
     print("Tipo: ".$Tipo."<br>");
     print("Status: ".$Status."<br>");
     print("Intentos: ".$Intentos."<br>");
-?>

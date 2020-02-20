@@ -1,21 +1,23 @@
 <?php
     $NIV=$_REQUEST['NIV'];
     $Origen=$_REQUEST['Origen'];
-    $NoPuertas=$_REQUEST['NoPuertas'];
+    $Placa=$_REQUEST['Placa'];
+    $Modelo=$_REQUEST['Modelo'];
+    $Marca=$_REQUEST['Marca'];
+    $Serie=$_REQUEST['Serie'];
+    $Tipo=$_REQUEST['Tipo'];
+    $Capacidad=$_REQUEST['Capacidad'];
+    $Version=$_REQUEST['Version'];
+    $Aseguradora=$_REQUEST['Aseguradora'];
     $Transmision=$_REQUEST['Transmision'];
     $Cilindraje=$_REQUEST['Cilindraje'];
-    $Marca=$_REQUEST['Marca'];
-    $Modelo=$_REQUEST['Modelo'];
-    $Serie=$_REQUEST['Serie'];
-    $Capacidad=$_REQUEST['Capacidad'];
-    $Tipo=$_REQUEST['Tipo'];
-    $Uso=$_REQUEST['Uso'];
-    $Version=$_REQUEST['Version'];
-    $Color=$_REQUEST['Color'];
-    $Aseguradora=$_REQUEST['Aseguradora'];
-    $Placa=$_REQUEST['Placa'];
+    $Combustible = $_REQUEST['Combustible'];
     $NoMotor=$_REQUEST['NoMotor'];
-    $Propietario=$_REQUEST['Propietario'];
+    $Color=$_REQUEST['Color'];
+    $NoPuertas=$_REQUEST['NoPuertas'];
+    $Uso=$_REQUEST['Uso'];
+    $Verificaciones = $_REQUEST['Verificaciones'];
+    $Propietario = $_REQUEST['Propietario'];
 
     print("NIV: ".$NIV."<br>");
     print("Origen: ".$Origen."<br>");
@@ -38,7 +40,10 @@
     // Indicar donde acudir por la funciones
     include("Conexion.php");
     $conexion = Conectar();
-    $SQL = "INSERT INTO vehiculo VALUES('','$RFC','$Nombre','$Domicilio');";
+    $SQL = "INSERT INTO vehiculo VALUES('','$NIV','$Origen','$NoPuertas','$Transmision','$Cilindraje','$Marca','$Modelo',
+    '$Serie','$Capacidad','$Tipo','$Uso',
+    '$Version','$Color','$Aseguradora','$Placa',
+    '$NoMotor','$Propietario','$Combustible','$Verificaciones');";
     $resultado = Consultar($conexion, $SQL);
     print("Resultado: ".$resultado);
     Cerrar($conexion);

@@ -1,45 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Licencias</title>
 </head>
 
 <body>
-<form id="form1" name="form1" method="get" action="Licencias.php">
-  <label>Num de Licencia
-  <input type="text" name="NumLicencia" />
-  </label>
-  <p>
-    <label>Fecha expiracion
-    <input type="date" name="FechaExp" />
-    </label>
-  </p>
-  <p>
-    <label>Fecha de Vencimiento
-    <input type="date" name="FechaVencimiento" />
-    </label>
-  </p>
-  <p>
-    <label>Estado
-    <input type="text" name="Estado" />
-    </label>
-  </p>
-  <p>
-    <label>Tipo
-    <input type="text" name="Tipo" />
-    </label>
-  </p>
-  <p>
-    <label>Conductor
-    <input type="text" name="Conductor" />
-    </label>
-  </p>
-  <p>
-    <label>
+  <form id="form1" name="form1" method="GET" action="../php/Licencias.php">
+    <!-- Validar solo numeros en conductor -->
+    <label for="conductor-licencia">Conductor</label>
+    <input type="text" name="Conductor" id="conductor-licencia" />
+    <label for="expiracion-licencia">Fecha expiracion</label>
+    <input type="date" name="FechaExp" id="expiracion-licencia" />
+    <label for="vencimiento-licencia">Fecha de Vencimiento</label>
+    <input type="date" name="FechaVencimiento" id="vencimiento-licencia" />
+    <label for="estado-licencia">Estado</label>
+    <input type="text" name="Estado" id="estado-licencia" />
+    <label for="tipo-licencia">Tipo</label>
+    <input type="text" name="Tipo" id="tipo-licencia" />
     <input name="Enviar" type="submit" id="Enviar" value="Enviar" />
-    </label>
-</p>
-</form>
+  </form>
 </body>
+
 </html>

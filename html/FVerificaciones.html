@@ -1,50 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Verificciones</title>
 </head>
 
 <body>
-<form id="form1" name="form1" method="post" action="Verificaciones.php">
-  <label>Id
-  <input type="text" name="Id" />
-  </label>
-  <p>
-    <label>Tipo
-    <input type="text" name="Tipo" />
-    </label>
-  </p>
-  <p>
-    <label>Dictamen
-    <input type="text" name="Dictamen" />
-    </label>
-  </p>
-  <p>
-    <label>Periodo
-    <input type="date" name="Periodo" />
-    </label>
-  </p>
-  <p>
-    <label>Vigencia
-    <input type="date" name="Vigencia" />
-    </label>
-  </p>
-  <p>
-    <label>Centro Verificador
-    <input type="text" name="CentroVerificador" />
-    </label>
-  </p>
-  <p>
-    <label>Vehiculo
-    <input type="text" name="Vehiculo" />
-    </label>
-  </p>
-  <p>
-    <label>
+  <form id="form1" name="form1" method="post" action="../php/Verificaciones.php">
+    <label for="tipo-verificacion">Tipo</label>
+    <input type="text" name="Tipo" id="tipo-verificacion" />
+    <label for="dicatamen-verificacion">Dictamen</label>
+    <input type="text" name="Dictamen" id="dicatamen-verificacion" />
+    <label for="periodo-verificacion">Periodo</label>
+    <input type="date" name="Periodo" id="periodo-verificacion" />
+    <label for="vigencia-verificacion">Vigencia</label>
+    <input type="date" name="Vigencia" id="vigencia-verificacion" />
+    <label for="centro-verificacion">Centro Verificador</label>
+    <input type="text" name="CentroVerificador" id="centro-verificacion" />
     <input name="Enviar" type="submit" id="Enviar" value="Enviar" />
-    </label>
-</p>
-</form>
+  </form>
 </body>
+
 </html>

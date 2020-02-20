@@ -1,5 +1,5 @@
 <?php
-    $Id=$_POST['Id'];
+    // $Id=$_POST['Id'];
     $RFC=$_POST['RFC'];
     $Nombre=$_POST['Nombre'];
     $Domicilio=$_POST['Domicilio'];

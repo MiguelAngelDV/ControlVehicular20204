@@ -1,5 +1,5 @@
 <?php
-    $Id=$_REQUEST['Id'];
+    // $Id=$_REQUEST['Id'];
     $Motivo=$_REQUEST['Motivo'];
     $Fecha=$_REQUEST['Fecha'];
     $Hora=$_REQUEST['Hora'];
@@ -11,7 +11,6 @@
     $Licencia=$_REQUEST['Licencia'];
     $Agente=$_REQUEST['Agente'];
 
-    print("Id: ".$Id."<br>");
     print("Motivo: ".$Motivo."<br>");
     print("Fecha: ".$Fecha."<br>");
     print("Hora: ".$Hora."<br>");
@@ -22,4 +21,13 @@
     print("Vehiculo: ".$Vehiculo."<br>");
     print("Licencia: ".$Licencia."<br>");
     print("Agente: ".$Agente."<br>");
+
+    // Indicar donde acudir por la funciones
+    include("Conexion.php");
+    $conexion = Conectar();
+    $SQL = "INSERT INTO multas VALUES('','$Motivo','$Fecha','$Hora',
+    '$Fundamento','$Lugar','$Garantia','$Obsc','$Agente','$Vehiculo','$Licencia');";
+    $resultado = Consultar($conexion, $SQL);
+    print("Resultado: ".$resultado);
+    Cerrar($conexion);
 ?>
