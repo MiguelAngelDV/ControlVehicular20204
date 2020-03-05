@@ -1,5 +1,5 @@
 <?php
-    // $Id=$_REQUEST['Id'];
+    // $Id=$_REQUEST['Id']; 
     $Tipo=$_REQUEST['Tipo'];
     $Dictamen=$_REQUEST['Dictamen'];
     $Periodo=$_REQUEST['Periodo'];
@@ -15,8 +15,15 @@
     // Indicar donde acudir por la funciones
     include("Conexion.php");
     $conexion = Conectar();
-    $SQL = "INSERT INTO verificaciones VALUES('','$Tipo','$Dictamen','$Periodo','$Vigencia','$CentroVerificador');";
+    //==== SQL de Inserción de datos ====
+    // $SQL = "INSERT INTO verificaciones VALUES('','$Tipo','$Dictamen','$Periodo','$Vigencia','$CentroVerificador');";
+    $SQL = "DELETE FROM verificaciones WHERE idVerificaciones=2";
     $resultado = Consultar($conexion, $SQL);
-    print("Resultado: ".$resultado);
+    if($resultado){
+        print("Query realizado con exito!<br>");
+        print("Resultado: ".$resultado);
+    }else{
+        print("El Query ha fallado!");
+    }
     Cerrar($conexion);
 ?>
