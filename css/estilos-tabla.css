@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100% !important;
+  width: 100% !important;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+  margin: 1em auto auto auto;
+}
+th {
+  width: auto;
+  height: 15px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+td {
+  width: auto;
+  height: 15px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 1em;
+}
+td p {
+  font-weight: bold;
+  font-size: 1.53em;
+}
+label {
+  margin: 0 0 1em 1em;
+}
+input[type="submit"] {
+  margin-left: 1em;
+}
+
+input[type="text"] {
+  height: 20px;
+  padding: 0.3em;
+  box-sizing: border-box;
+}
+
+form {
+  margin: 1.5em 0 0 0;
+}

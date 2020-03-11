@@ -44,13 +44,25 @@
     // '$Serie','$Capacidad','$Tipo','$Uso',
     // '$Version','$Color','$Aseguradora','$Placa',
     // '$NoMotor','$Propietario','$Combustible','$Verificaciones');";
-    $SQL = "DELETE FROM vehiculos WHERE Idvehiculo=1";
+    $SQL = "SELECT * FROM vehiculo";
     $resultado = Consultar($conexion, $SQL);
-    if($resultado){
-        print("EL QUERY SE HA REALIZADO CON EXITO!<br>");
-        print("Resultado: ".$resultado);
+    if($resultado != NULL){
+        print("El QUERY se ha realizado con éxito!<br>");
+        // $n es el numero de de filas afectadas por la consulta SELECT
+        // $C es el numero de de columnas afectadas por la consulta SELECT
+        $c = mysqli_num_fields($resultado);
+        $n = mysqli_num_rows($resultado);
+        print("El numero de filas afectadas es: ".$n."<br>");
+        print("El numero de columnas de la consulta es: ".$c."<br>");
+        for($f=0; $f<$n; $f++){
+            print("-----Datos-----"."<br>");
+            $fila = mysqli_fetch_row($resultado);
+            for($x=0;$x<$c;$x++){
+                print($fila[$x]."<br>");
+            }
+        }
     }else{
-        print("EL QUERY HA FALLADO");
+        print("El QUERY ha fallado!");
     }
     Cerrar($conexion);
 ?>
