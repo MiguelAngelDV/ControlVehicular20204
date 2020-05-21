@@ -21,7 +21,7 @@
     <?php
     // Debuggging die(var_dump($SQL));
     include('Conexion.php');
-    if(isset($_REQUEST['criterio'])  and isset($_REQUEST['atributo'])){
+    if(isset($_REQUEST['criterio']) and isset($_REQUEST['atributo'])){
         $criterio = $_REQUEST["criterio"];
         $atributo = $_REQUEST['atributo'];
         $con = Conectar();

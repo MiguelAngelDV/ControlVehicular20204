@@ -1,0 +1,62 @@
+Introducción.
+Con la llegada de la era digital, las redes sociales y el auge de las TIC's, nos encontramos en una época 
+donde loa generación de datos se encuentra en su punto máximo. Las instituciones de cualquier índole, no son 
+ajenas a este fenómeno, han reconocido que con el tratamiento adecuado de los datos que generan pueden construir 
+información de calidad. 
+La transformación que las TICs han generado en disciplinas como la administración ha sido profunda, pues ahora 
+estas materias han propuesto y exigido el desarrollo de sistemas de información que no solo construyan información 
+de calidad, sino que gestione e integre la información correcta, de forma eficaz y eficiente, en el momento oportuno
+y por la vía más rápida y factible, con vistas a lograr el desenvolvimiento eficaz de las funciones, y la toma de 
+decisiones apropiadas a cualquier nivel de la organización.
+
+METRICA (Metodología para la Planificación y Desarrollo de Sistemas de Información).
+	Soporta  eficazmente el funcionamiento normal de los distintas instancias a medida que crece el volumen de información a manejar por la misma.
+	Los procesos que conforman la estructura principal de la versión tres de esta metodología son los siguientes:
+		○ Planificación de sistemas de información: En esta fase se proporciona un marco referencial de los Sistemas de Información de la Organización. Con esta fase se obtiene un estudio de viabilidad del sistema, así como conocer la situación actual de la entidad, además de la elaboración de la Arquitectura de información del Sistema.
+		
+		○ Desarrollo de sistemas de información: Contiene todas las actividades y tareas que se deben llevar a cabo para desarrollar un sistema, cubriendo desde el análisis de requisitos hasta la instalación del software. Además de las tareas relativas al análisis, incluye dos partes en el diseño de sistemas: el arquitectónico y el detallado.
+		
+		○ Mantenimiento de sistemas de información: Proceso en el que se obtiene una nueva versión del sistema de información desarrollado con MÉTRICA, a partir de las peticiones de mantenimiento que los usuarios realizan con motivo de un problema detectado en el sistema o por la necesidad de una mejora del mismo. Se realiza un registro de las peticiones, se diagnostica el tipo de mantenimiento y se decide si se le da respuesta o no, en función del plan de mantenimiento asociado al sistema afectado por la petición, y se establece con qué prioridad.
+
+Propuesta de desarrollo.
+Utilizando la metodología de Métrica en su versión tres podemos enlistar las actividades a llevar cabo para el diseño de un SSD según las fases que nos otorga Métrica.
+
+FASE ANÁLISIS DEL SISTEMA DE INFORMACIÓN (ASI)
+	• Establecimiento de requisitos de negocio (determinación de indicadores y
+	• dimensiones, etc.).
+	• Establecer los perfiles de usuarios y el nivel de acceso a la información.
+	• Definir las transformaciones necesarias sobre los datos.
+	• Determinar las capacidades del hardware necesario.
+	• Presentación de prototipos iníciales del sistema.
+	• Aprobación de los requisitos.
+	• Especificación del plan de pruebas.
+
+FASE DISEÑO DEL SISTEMA DE INFORMACIÓN (DSI)
+	• Definición de la arquitectura del sistema.
+	• Definición del modelo dimensional.
+	• Diseño físico del modelo dimensional.
+	• Identificar las fuentes origen de la información.
+	• Determinación de la información útil según los perfiles.
+	• Definición detallada de cuadros de mandos e informes.
+	• Estimación de volumetrías.
+	• Especificación técnica del plan de pruebas y requisitos de implantación.
+	
+FASE CONSTRUCCIÓN DEL SISTEMA DE INFORMACIÓN (CSI)
+	• Preparación del entorno.
+	• Creación de bases de datos y esquemas ROLAP.
+	• Construcción de procesos ETL.
+	• Implementación de informes, análisis y cuadros de mandos.
+	• Integración con el esquema interno de seguridad.
+	• Aplicación de estilos.
+	• Presentación de prototipos, a lo largo de la fase, conforme se avance en la misma.
+	• Ejecución del plan de pruebas.
+	• Elaboración de los manuales de usuario y guías técnicas.
+	
+FASE IMPLANTACIÓN Y ACEPTACIÓN DEL SISTEMA (IAS)
+	• Establecimiento del Plan de Implantación.
+	• Instalación de la infraestructura y de la solución desarrollada.
+	• Pruebas de integración y rendimiento.
+	• Presentación general y formación a usuarios.
+	• Periodo de pruebas de usuarios.
+	• Resolución de incidencias, ajustes y optimizaciones.
+	• Paso a producción del nuevo sistema.
